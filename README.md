@@ -305,7 +305,7 @@ HubSpot Ticket Enriched
 
 ---
 
-# Example Customer Inquiry
+## Example Customer Inquiry
 
 Example incoming email:
 
@@ -337,7 +337,7 @@ The pricing lookup can then determine the applicable service price range based o
 
 ---
 
-# Key Technologies
+## Key Technologies
 
 | Technology    | Purpose                   |
 | ------------- | ------------------------- |
@@ -351,7 +351,7 @@ The pricing lookup can then determine the applicable service price range based o
 
 ---
 
-# Current Limitations
+## Current Limitations
 
 The current workflow is a working foundation but should be improved before production deployment.
 
@@ -410,7 +410,7 @@ The extracted AI fields should be mapped explicitly to the appropriate HubSpot t
 
 ---
 
-# Recommended Production Architecture
+## Recommended Production Architecture
 
 A more complete production version should follow this structure:
 
