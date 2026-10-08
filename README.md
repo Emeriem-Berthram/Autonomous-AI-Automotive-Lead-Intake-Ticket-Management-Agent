@@ -1,7 +1,6 @@
-# Autonomous-AI-Automotive-Lead-Intake-Ticket-Management-Agent
-# Autonomous AI Automotive Lead Intake & Ticket Management Agent
+## Autonomous-AI-Automotive-Lead-Intake-Ticket-Management-Agent
 
-## Overview
+### Overview
 
 This n8n workflow automates the initial intake and processing of automotive customer inquiries received through Gmail.
 
@@ -11,13 +10,13 @@ The primary goal is to reduce manual lead triage while ensuring that every custo
 
 ---
 
-## Workflow Title
+### Workflow Title
 
 **Autonomous AI Automotive Lead Intake & Ticket Management Agent**
 
 ---
 
-## Workflow Architecture
+### Workflow Architecture
 
 ```text
 Gmail Trigger
@@ -39,7 +38,7 @@ HTTP Request (HubSpot API)
 
 ---
 
-## 1. Gmail Trigger
+### 1. Gmail Trigger
 
 **Node:** `Gmail Trigger`
 
@@ -55,7 +54,7 @@ The email subject and body are used as the source information for the rest of th
 
 ---
 
-## 2. Create HubSpot Ticket
+### 2. Create HubSpot Ticket
 
 **Node:** `Create a ticket`
 
@@ -141,7 +140,7 @@ The model receives the customer's email through the `Basic LLM Chain`.
 
 ---
 
-## 5. Vehicle Tier Lookup
+### 5. Vehicle Tier Lookup
 
 **Node:** `Get row(s) in sheet`
 
@@ -161,7 +160,7 @@ The vehicle tier can subsequently be used when determining service pricing.
 
 ---
 
-## 6. Pricing Master Lookup
+### 6. Pricing Master Lookup
 
 **Node:** `Get row(s) in sheet1`
 
@@ -184,7 +183,7 @@ This allows the workflow to retrieve the applicable price range for a requested 
 
 ---
 
-## 7. Price Processing
+### 7. Price Processing
 
 **Node:** `Code in JavaScript`
 
@@ -212,7 +211,7 @@ For example:
 
 ---
 
-## 8. HubSpot Ticket Update
+### 8. HubSpot Ticket Update
 
 **Node:** `Update a ticket`
 
